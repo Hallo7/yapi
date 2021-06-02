@@ -5,8 +5,8 @@ import { Icon, Layout, Tooltip, message, Row, Popconfirm } from 'antd';
 const { Content, Sider } = Layout;
 import ProjectEnvContent from './ProjectEnvContent.js';
 import { connect } from 'react-redux';
-import { updateEnv, getProject, getEnv } from '../../../../reducer/modules/project';
-import EasyDragSort from '../../../../components/EasyDragSort/EasyDragSort.js';
+import { updateEnv, getProject, getEnv } from '@/reducer/modules/project';
+import EasyDragSort from '@/components/EasyDragSort/EasyDragSort.js';
 
 @connect(
   state => {

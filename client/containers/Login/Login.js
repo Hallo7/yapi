@@ -2,7 +2,7 @@ import React, { PureComponent as Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { Form, Button, Input, Icon, message, Radio } from 'antd';
-import { loginActions, loginLdapActions } from '../../reducer/modules/user';
+import { loginActions, loginLdapActions } from '@/reducer/modules/user';
 import { withRouter } from 'react-router';
 const FormItem = Form.Item;
 const RadioGroup = Radio.Group;

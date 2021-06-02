@@ -5,7 +5,7 @@ import { Form, Button, message } from 'antd';
 const FormItem = Form.Item;
 import './project-request.scss';
 import AceEditor from 'client/components/AceEditor/AceEditor';
-import { updateProjectScript, getProject } from '../../../../reducer/modules/project';
+import { updateProjectScript, getProject } from '@/reducer/modules/project';
 
 @connect(
   state => {

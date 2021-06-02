@@ -3,10 +3,10 @@ import React, { PureComponent as Component } from 'react';
 import NewsTimeline from './NewsTimeline/NewsTimeline';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import Breadcrumb from '../../components/Breadcrumb/Breadcrumb';
+import Breadcrumb from '@/components/Breadcrumb/Breadcrumb';
 import { Button } from 'antd';
-import { getMockUrl } from '../../reducer/modules/news.js';
-import Subnav from '../../components/Subnav/Subnav.js';
+import { getMockUrl } from '@/reducer/modules/news.js';
+import Subnav from '@/components/Subnav/Subnav.js';
 
 @connect(
   state => {

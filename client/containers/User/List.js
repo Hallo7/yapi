@@ -1,7 +1,7 @@
 import React, { PureComponent as Component } from 'react';
-import { formatTime } from '../../common.js';
+import { formatTime } from '@/common.js';
 import { Link } from 'react-router-dom';
-import { setBreadcrumb } from '../../reducer/modules/user';
+import { setBreadcrumb } from '@/reducer/modules/user';
 //import PropTypes from 'prop-types'
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';

@@ -3,10 +3,10 @@ import './Follows.scss';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { Row, Col } from 'antd';
-import { getFollowList } from '../../reducer/modules/follow';
-import { setBreadcrumb } from '../../reducer/modules/user';
-import ProjectCard from '../../components/ProjectCard/ProjectCard.js';
-import ErrMsg from '../../components/ErrMsg/ErrMsg.js';
+import { getFollowList } from '@/reducer/modules/follow';
+import { setBreadcrumb } from '@/reducer/modules/user';
+import ProjectCard from '@/components/ProjectCard/ProjectCard.js';
+import ErrMsg from '@/components/ErrMsg/ErrMsg.js';
 
 @connect(
   state => {

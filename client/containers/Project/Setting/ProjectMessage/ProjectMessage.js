@@ -22,19 +22,19 @@ import {
   delProject,
   getProject,
   upsetProject
-} from '../../../../reducer/modules/project';
-import { fetchGroupMsg } from '../../../../reducer/modules/group';
-import { fetchGroupList } from '../../../../reducer/modules/group.js';
-import { setBreadcrumb } from '../../../../reducer/modules/user';
+} from '@/reducer/modules/project';
+import { fetchGroupMsg } from '@/reducer/modules/group';
+import { fetchGroupList } from '@/reducer/modules/group.js';
+import { setBreadcrumb } from '@/reducer/modules/user';
 import { connect } from 'react-redux';
 const { TextArea } = Input;
 import { withRouter } from 'react-router';
 const FormItem = Form.Item;
 const RadioGroup = Radio.Group;
 const RadioButton = Radio.Button;
-import constants from '../../../../constants/variable.js';
+import constants from '@/constants/variable.js';
 const confirm = Modal.confirm;
-import { nameLengthLimit, entries, trim, htmlFilter } from '../../../../common';
+import { nameLengthLimit, entries, trim, htmlFilter } from '@/common';
 import '../Setting.scss';
 import _ from 'underscore';
 import ProjectTag from './ProjectTag.js';

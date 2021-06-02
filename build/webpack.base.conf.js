@@ -160,6 +160,7 @@ module.exports = {
     modules: ["node_modules"],
     extensions: [".js", ".css", ".json", ".string", ".tpl"],
     alias: {
+      '@': resolve('client'),
       common: resolve("common"),
       client: resolve("client"),
       exts: resolve("exts"),
