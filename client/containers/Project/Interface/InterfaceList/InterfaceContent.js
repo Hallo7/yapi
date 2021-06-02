@@ -4,8 +4,9 @@ import PropTypes from 'prop-types';
 import { Tabs, Modal, Button } from 'antd';
 import Edit from './Edit.js';
 import View from './View.js';
+import Activity from './Activity.js';
 import { Prompt } from 'react-router';
-import { fetchInterfaceData } from '../../../../reducer/modules/interface.js';
+import { fetchInterfaceData } from '@/reducer/modules/interface.js';
 import { withRouter } from 'react-router-dom';
 import Run from './Run/Run.js';
 const plugin = require('client/plugin.js');
@@ -123,6 +124,10 @@ class Content extends Component {
       run: {
         component: Run,
         name: '运行'
+      },
+      activity: {
+        component: Activity,
+        name: '动态'
       }
     };
 
