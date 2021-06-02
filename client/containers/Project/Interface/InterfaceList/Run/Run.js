@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { withRouter } from 'react-router';
 import axios from 'axios';
 import { message } from 'antd';
-import { Postman } from '../../../../../components';
+import { Postman } from '@/components';
 import AddColModal from './AddColModal';
 
 // import {

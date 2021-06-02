@@ -6,13 +6,13 @@ import {
   updateInterfaceData,
   fetchInterfaceListMenu,
   fetchInterfaceData
-} from '../../../../reducer/modules/interface.js';
-import { getProject } from '../../../../reducer/modules/project.js';
+} from '@/reducer/modules/interface.js';
+import { getProject } from '@/reducer/modules/project.js';
 import axios from 'axios';
 import { message, Modal } from 'antd';
 import './Edit.scss';
 import { withRouter, Link } from 'react-router-dom';
-import ProjectTag from '../../Setting/ProjectMessage/ProjectTag.js';
+import ProjectTag from '@/containers/Project/Setting/ProjectMessage/ProjectTag.js';
 
 @connect(
   state => {

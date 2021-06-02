@@ -14,10 +14,10 @@ import {
   Tooltip
 } from 'antd';
 import PropTypes from 'prop-types';
-import { fetchGroupMsg } from '../../../../reducer/modules/group';
+import { fetchGroupMsg } from '@/reducer/modules/group';
 import { connect } from 'react-redux';
-import ErrMsg from '../../../../components/ErrMsg/ErrMsg.js';
-import { fetchGroupMemberList } from '../../../../reducer/modules/group.js';
+import ErrMsg from '@/components/ErrMsg/ErrMsg.js';
+import { fetchGroupMemberList } from '@/reducer/modules/group.js';
 import {
   fetchProjectList,
   getProjectMemberList,
@@ -26,8 +26,8 @@ import {
   delMember,
   changeMemberRole,
   changeMemberEmailNotice
-} from '../../../../reducer/modules/project.js';
-import UsernameAutoComplete from '../../../../components/UsernameAutoComplete/UsernameAutoComplete.js';
+} from '@/reducer/modules/project.js';
+import UsernameAutoComplete from '@/components/UsernameAutoComplete/UsernameAutoComplete.js';
 import '../Setting.scss';
 
 const Option = Select.Option;

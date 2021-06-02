@@ -9,15 +9,15 @@ import {
   deleteInterfaceData,
   deleteInterfaceCatData,
   initInterface
-} from '../../../../reducer/modules/interface.js';
-import { getProject } from '../../../../reducer/modules/project.js';
+} from '@/reducer/modules/interface.js';
+import { getProject } from '@/reducer/modules/project.js';
 import { Input, Icon, Button, Modal, message, Tree, Tooltip } from 'antd';
 import AddInterfaceForm from './AddInterfaceForm';
 import AddInterfaceCatForm from './AddInterfaceCatForm';
 import axios from 'axios';
 import { Link, withRouter } from 'react-router-dom';
 import produce from 'immer';
-import { arrayChangeIndex } from '../../../../common.js';
+import { arrayChangeIndex } from '@/common.js';
 
 import './interfaceMenu.scss';
 

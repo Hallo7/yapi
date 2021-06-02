@@ -10,10 +10,10 @@ import { Route, Switch, Redirect } from 'react-router-dom';
 import { Tabs, Layout, Spin } from 'antd';
 const { Content, Sider } = Layout;
 const TabPane = Tabs.TabPane;
-import { fetchNewsData } from '../../reducer/modules/news.js';
+import { fetchNewsData } from '@/reducer/modules/news.js';
 import {
   setCurrGroup
-} from '../../reducer/modules/group';
+} from '@/reducer/modules/group';
 import './Group.scss';
 import axios from 'axios'
 

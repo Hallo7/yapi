@@ -5,14 +5,14 @@ import { withRouter } from 'react-router';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import { message, Tooltip, Input } from 'antd';
-import { getEnv } from '../../../../reducer/modules/project';
+import { getEnv } from '@/reducer/modules/project';
 import {
   fetchInterfaceColList,
   setColData,
   fetchCaseData,
   fetchCaseList
-} from '../../../../reducer/modules/interfaceCol';
-import { Postman } from '../../../../components';
+} from '@/reducer/modules/interfaceCol';
+import { Postman } from '@/components';
 
 import './InterfaceCaseContent.scss';
 
