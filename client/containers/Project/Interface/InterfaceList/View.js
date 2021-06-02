@@ -117,7 +117,7 @@ class View extends Component {
   res_body(res_body_type, res_body, res_body_is_json_schema) {
     if (res_body_type === 'json') {
       if (res_body_is_json_schema) {
-        return <SchemaTable dataSource={res_body} />;
+        return <SchemaTable defaultExpandAllRows={true} dataSource={res_body} />;
       } else {
         return (
           <div className="colBody">
@@ -138,7 +138,7 @@ class View extends Component {
   req_body(req_body_type, req_body_other, req_body_is_json_schema) {
     if (req_body_other) {
       if (req_body_is_json_schema && req_body_type === 'json') {
-        return <SchemaTable dataSource={req_body_other} />;
+        return <SchemaTable defaultExpandAllRows={true} dataSource={req_body_other} />;
       } else {
         return (
           <div className="colBody">
@@ -201,7 +201,8 @@ class View extends Component {
     }
 
     return (
-      <Table bordered size="small" pagination={false} columns={columns} dataSource={dataSource} />
+      <Table bordered size="small" defaultExpandAllRows={true} 
+        pagination={false} columns={columns} dataSource={dataSource} />
     );
   }
 

@@ -103,7 +103,8 @@ const columns = [
 
 class SchemaTable extends Component {
   static propTypes = {
-    dataSource: PropTypes.string
+    dataSource: PropTypes.string, // 数据数组
+    defaultExpandAllRows: PropTypes.bool // 初始时，是否展开所有行
   };
 
   constructor(props) {
@@ -111,9 +112,10 @@ class SchemaTable extends Component {
   }
 
   render() {
+    const { dataSource, defaultExpandAllRows } = this.props;
     let product;
     try {
-      product = json5.parse(this.props.dataSource);
+      product = json5.parse(dataSource);
     } catch (e) {
       product = null;
     }
@@ -121,8 +123,11 @@ class SchemaTable extends Component {
       return null;
     }
     let data = schemaTransformToTable(product);
+    const isExpandAllRows = defaultExpandAllRows || true;
     data = _.isArray(data) ? data : [];
-    return <Table bordered size="small" pagination={false} dataSource={data} columns={columns} />;
+    return <Table bordered size="small" pagination={false} 
+      defaultExpandAllRows={isExpandAllRows} 
+      dataSource={data} columns={columns} />;
   }
 }
 export default SchemaTable;
